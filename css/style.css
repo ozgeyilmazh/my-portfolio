@@ -48,7 +48,6 @@ html {
 .head{
     border-radius: 1px;
     border: 5px solid rgba(255, 255, 255, 1);
-    margin-top: 5%;
 }
 @media (max-width: 991.98px) {
     #logo{
