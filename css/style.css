@@ -39,6 +39,7 @@ html {
     color: #fff;
     font-family: 'Oswald', sans-serif;
     font-size: 20px;
+    margin-top: -8%;
 }
 .header .main h1{
     color: #fff;
@@ -48,6 +49,7 @@ html {
 .head{
     border-radius: 1px;
     border: 5px solid rgba(255, 255, 255, 1);
+    margin-top: 5%;
 }
 @media (max-width: 991.98px) {
     #logo{
@@ -56,6 +58,17 @@ html {
     .head{
         border-radius: 1px;
         margin-top: 30%;
+        border: 5px solid rgba(255, 255, 255, 1);
+    }
+}
+@media (min-width: 1920px) {
+    #logo{
+        width: 50%;
+    }
+    .head{
+        border-radius: 1px;
+        margin-top: 20%;
+        margin-bottom: 30%;
         border: 5px solid rgba(255, 255, 255, 1);
     }
 }
