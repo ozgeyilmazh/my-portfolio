@@ -1,0 +1,482 @@
+/************************ GENEL ***************************/
+body, html {
+  height: 100%;
+  top:0;
+  font-family: 'Oswald', sans-serif;
+  background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../images/overlay.png");
+}
+html {
+    scroll-behavior: smooth;
+  }
+/************************ Başlık ***************************/
+.header{
+  background-image: url("../images/header3.jpg");
+  height: 100%;
+  top:0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.header-overlay {
+    -moz-transition: background-color 2.5s ease-in-out;
+	-webkit-transition: background-color 2.5s ease-in-out;
+	-ms-transition: background-color 2.5s ease-in-out;
+	transition: background-color 2.5s ease-in-out;
+	-moz-transition-delay: 0.75s;
+	-webkit-transition-delay: 0.75s;
+	-ms-transition-delay: 0.75s;
+	transition-delay: 0.75s;
+    height: 100%;
+    top:0;
+	background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../images/overlay.png");
+	background-size: auto, 256px 256px;
+	background-position: center, center;
+	background-repeat: no-repeat, repeat;
+}
+
+.header .main p{
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+.header .main h1{
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+    font-size: 40px;
+}
+.head{
+    border-radius: 1px;
+    border: 5px solid rgba(255, 255, 255, 1);
+    margin-top: 5%;
+}
+@media (max-width: 991.98px) {
+    #logo{
+        width: 100%;
+    }
+    .head{
+        border-radius: 1px;
+        margin-top: 30%;
+        border: 5px solid rgba(255, 255, 255, 1);
+    }
+}
+
+ /******************NAVBAR*******************/
+
+ .navbar .nav-link {
+    color: #fff;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar .navbar-brand {
+    color: #fff;
+}
+
+
+/* Change navbar styling on scroll */
+.navbar.active {
+    background: #fff;
+    box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar.active .nav-link {
+    color: #555;
+}
+
+.navbar.active .nav-link:hover,
+.navbar.active .nav-link:focus {
+    color: #555;
+    text-decoration: none;
+}
+
+.navbar.active .navbar-brand {
+    color: #555;
+}
+
+
+/* Change navbar styling on small viewports */
+@media (max-width: 991.98px) {
+    .navbar {
+        background: #fff;
+    }
+
+    .navbar .navbar-brand, .navbar .nav-link {
+        color: #555;
+    }
+    .navbar-toggler  {
+        color: royalblue;
+    }
+}
+
+
+/*****************HOME*********************/
+
+#home {
+    background-color: #fff;
+    height: 120%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#home img {
+    top: 50%;
+    left: 0%;
+    transform: translate(0,25%);
+}
+.avatar{
+    border-radius: 50%;
+    padding: 3%;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+#home:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 45%;
+    width: 2px;
+    height: 100%;
+    background-color: #d8d8d8;
+}
+#content{
+    float: left;
+}
+#content h1  {
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+    font-size: 3vw;
+    line-height: 1em;
+    font-weight: 400;
+    margin-left: 18.3%;
+    margin-top: 30%;
+}
+
+#content h1:before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 50%;
+    background-color: #000;
+    top: 50%;
+    left: -4.3%;
+    transform: translate(0,-50%);
+}
+#content p  {
+    font-family: 'Oswald', sans-serif;
+    position: relative;
+    font-size: 3vw;
+    line-height: 1em;
+    font-weight: 400;
+    margin-left: 15%;
+}
+
+@media (max-width: 991.98px) {
+    #home img {
+        width: 100%;
+        top: 50%;
+        left: 80%;
+        transform: translate(3%,15%);
+    }
+    #home:before {
+        display: none;
+    }
+    #content h1:before {
+        display: none;
+    }
+    #content h1  {
+        font-family: 'Oswald', sans-serif;
+        position: relative;
+        font-size: 30px;
+        line-height: 1em;
+        font-weight: 400;
+        margin-top: 20%;
+        left: 0;
+    }
+    #content p  {
+        font-family: 'Oswald', sans-serif;
+        position: relative;
+        font-size: 3vw;
+        line-height: 1em;
+        font-weight: 400;
+        margin-left: 18.3%;
+    }
+}
+@media (min-width: 1367px) {
+    #home img {
+        left: 80%;
+        transform: translate(3%,75%);
+    }
+    #content h1:before {
+        content: '';
+        position: absolute;
+        width: 3px;
+        height: 50%;
+        background-color: #000;
+        top: 50%;
+        left: -9%;
+        transform: translate(0,-30%);
+    }
+    #content h1  {
+        margin-top: 50%;
+    }
+
+}
+
+/***********WORK*************/
+
+/* Center website */
+.main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .column img{
+    padding: 4%;
+  }
+  .column h3,p{
+    padding-left: 4%;
+    font-family: 'Oswald','sans-serif';
+  }
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+    height: 100%;
+    position: relative;
+  }
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+  .content {
+    position: relative;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+  }
+  
+  .content:hover .overlay {
+    width: 100%;
+    left: 0;
+  }
+  
+  .text {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: 'Oswald', 'sans-serif';
+    font-weight: bolder;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    white-space: nowrap;
+  }
+  .text a {
+      color:white;
+  }
+  .text a:hover{
+      color: #66cccc;
+      -webkit-transition: all 1s;
+      -moz-transition: all 1s;
+      -o-transition: all 1s;
+  }
+
+  /*ozlusoz*/
+
+  #ozlusoz {
+    background-color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.avatar2{
+    border-radius: 50%;
+    padding: 3%;
+}
+ #ozlusoz h6 {
+    font-family: 'Oswald', 'sans-serif';    
+ }
+#ozlusoz p {
+    font-size: 50px;
+    font-family: 'Oswald', 'sans-serif';
+}
+@media (max-width: 991.98px) {
+    #ozlusoz{
+        height: 60%;
+    }
+    #ozlusoz p {
+        font-size: 30px;
+        font-family: 'Oswald', 'sans-serif';
+    }
+}
+
+/*Aboutme*/
+#about {
+    background-color: #ffe2e5;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 150%;
+    flex: auto;
+}
+#about h1,p{
+    font-size: 50px;
+    font-family: 'Oswald', 'sans-serif';
+    padding-top: 10%;
+    color: black;
+}
+.aboutme{
+    align-items: center;
+}
+@media (max-width: 1366px){
+    #about {
+        height: auto;
+        
+    }
+}
+@media (max-width: 991px){
+    #about {
+        height: auto;
+        
+    }
+}
+/******CONTACT*******/
+
+
+.section-header {
+    font-family: Inter,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+    font-size: 160px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    text-align: left;
+    z-index: 10;
+    position: relative;
+    line-height: 0.6em;
+    pointer-events: none;
+    flex: 1 100%;
+    margin-top: 3%;
+}
+.image{
+    background-color: #000;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: auto;
+    width: auto;
+
+    flex: auto;
+}
+.contact-info {
+    background-color: #fff;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: auto;
+    width: auto;
+    margin-top: -5%;
+    padding: 15%;
+    flex: auto;
+}
+
+.contact-info a{
+    color: tomato;
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: Inter,Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+}
+.grid-item-divider-left {
+    right: initial;
+    transform: scaleX(1);
+}
+.grid-item-divider {
+    display: block;
+    position: relative;
+    height: 4px;
+    background-color: tomato;
+    width: 60px;
+    right: 0;
+    transform: scaleX(0.8);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.social-link{
+    list-style: none;
+    text-align: left;
+}
+
+ul li {
+    display:inline-block;
+    *display:inline; /*IE7*/
+    *zoom:1; /*IE7*/
+    margin-right: 5%;
+    -moz-transition-delay: 0.75s;
+	-webkit-transition-delay: 0.75s;
+	-ms-transition-delay: 0.75s;
+	transition-delay: 0.75s;
+}
+@media (max-width: 600px){
+    .section-header {
+        font-size: 65px;
+    }
+    .contact-info a{
+        font-size: 35px;
+    }
+}
